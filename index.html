@@ -46,6 +46,88 @@
   <meta name="twitter:title" content="United Diesel Care | Diesel & CRDI Specialists in Nagercoil">
   <meta name="twitter:description" content="Diesel, CRDI injector testing, diagnostics and fuel-system services in Ozhuginasery, Nagercoil.">
   <meta name="twitter:image" content="https://united-diesel-care.vercel.app/assets/images/united_diesel_care_signboard.webp">
+
+  <style>
+    /* Fixed, predictable workshop gallery */
+    .image-card > img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-auto-rows: 240px;
+      gap: 18px;
+    }
+
+    .gallery-item {
+      position: relative;
+      margin: 0;
+      min-width: 0;
+      min-height: 0;
+      overflow: hidden;
+      border-radius: 14px;
+    }
+
+    .gallery-item.large {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-item figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 12px 14px;
+      background: linear-gradient(transparent, rgba(0,0,0,.78));
+      color: #fff;
+      font-weight: 700;
+      font-size: .92rem;
+      letter-spacing: .02em;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 210px;
+        gap: 12px;
+      }
+
+      .gallery-item.large {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+
+      .image-card > img {
+        min-height: 300px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 240px;
+      }
+
+      .gallery-item.large {
+        grid-column: span 1;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -249,19 +331,28 @@
         </div>
         <div class="gallery-grid">
           <figure class="gallery-item large reveal">
-            <img src="assets/images/workshop_panorama.jpg" alt="United Diesel Care workshop interior" loading="lazy">
+            <img src="assets/images/workshop_panorama.jpg" alt="United Diesel Care diesel workshop in Nagercoil" loading="lazy">
+            <figcaption>United Diesel Care Workshop</figcaption>
           </figure>
           <figure class="gallery-item reveal">
-            <img src="assets/images/common_rail_injectors.webp" alt="Common rail diesel injectors" loading="lazy">
+            <img src="assets/images/united_diesel_care_signboard.webp" alt="United Diesel Care signboard at Ozhuginasery, Nagercoil" loading="lazy">
+            <figcaption>Workshop Signboard</figcaption>
           </figure>
           <figure class="gallery-item reveal">
-            <img src="assets/images/diesel_test_bench.webp" alt="Electronic diesel test bench at United Diesel Care" loading="lazy">
+            <img src="assets/images/diesel_test_bench.webp" alt="Diesel injector test bench at United Diesel Care" loading="lazy">
+            <figcaption>Diesel Test Bench</figcaption>
           </figure>
           <figure class="gallery-item reveal">
-            <img src="assets/images/bosch_parts.webp" alt="Bosch diesel components" loading="lazy">
+            <img src="assets/images/common_rail_injectors.webp" alt="Common rail diesel injectors at United Diesel Care" loading="lazy">
+            <figcaption>Common Rail Injectors</figcaption>
           </figure>
           <figure class="gallery-item reveal">
-            <img src="assets/images/diesel_flush_service.jpg" alt="Diesel system service equipment" loading="lazy">
+            <img src="assets/images/bosch_parts.webp" alt="Bosch diesel components at United Diesel Care" loading="lazy">
+            <figcaption>Diesel Components</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/images/diesel_flush_service.jpg" alt="Diesel fuel system service at United Diesel Care" loading="lazy">
+            <figcaption>Diesel Service</figcaption>
           </figure>
         </div>
       </div>
