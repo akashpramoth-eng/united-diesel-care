@@ -27,10 +27,3 @@ Replace:
 - Connect the enquiry form to a real backend/form service if enquiries should actually be submitted.
 
 The site intentionally does not fabricate customer testimonials or business statistics.
-
-
-## Final QA
-- Real United Diesel Care workshop/signboard images included.
-- Responsive navigation and mobile layouts included.
-- Call, WhatsApp and Google Maps CTAs verified.
-- Local SEO metadata and AutomotiveBusiness structured data included.
